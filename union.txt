@@ -1,0 +1,77 @@
+import java.util.Scanner;
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+   int[] a= new int [10];
+   int[] b= new int [10];
+   int[] c= new int [10];
+    int m, n, k = 0, x, i, j;
+    Scanner sc = new Scanner (System.in);
+      System.out.println ("Enter the number of elements in I array: ");
+      m = sc.nextInt ();
+      System.out.println ("Enter the number of elements in II array: ");
+      n = sc.nextInt ();
+      System.out.println ("enter the elements of I array :  ");
+    for (i = 0; i < m; i++)
+      {
+	a[i] = sc.nextInt ();
+      }
+    System.out.println ("enter the elements of II array :");
+    for (j = 0; j < n; j++)
+      {
+	b[j] = sc.nextInt ();
+      }
+    int p = m + n;
+    i = 0;
+    j = 0;
+    int y=0;
+    while (i < m && j < n)
+      {
+	if (a[i] < b[j])
+	  {
+	    c[k] = a[i];
+	    k++;
+	    i++;
+	    y++;
+	  }
+	else if (a[i]>b[j])
+	  {
+	    c[k] = b[j];
+	    k++;
+	    j++;
+	    y++;
+	  }
+	  else
+	  {
+	      c[k]=a[i];
+	      i++;
+	      j++;
+	      k++;
+	      y++;
+	  }
+      }
+
+    while (i < m)
+	  {
+	    c[k] = a[i];
+	    k++;
+	    i++;
+	    y++;
+	  }
+    while(j<n)
+	  {
+	    c[k] = b[j];
+	    k++;
+	    j++;
+	    y++;
+	  }
+    System.out.println ("union : ");
+    for (x = 0; x < y; x++)
+      {
+	System.out.println ("\t " + c[x]);
+      }
+
+  }
+}
