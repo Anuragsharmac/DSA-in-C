@@ -63,3 +63,13 @@ int count()
     }
     return c;
 }
+struct node *n1(){
+    struct node *temp=head;
+    head = head->next;
+    return(temp);
+}
+struct node
+{
+    int data;
+    struct node*next;
+};
