@@ -62,7 +62,7 @@ int count()
         temp = temp -> next;
     }
     return c;
-}
+}                                                                                        
 struct node *n1(){
     struct node *temp=head;
     head = head->next;
