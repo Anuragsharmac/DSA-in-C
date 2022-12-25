@@ -30,17 +30,3 @@ void countSort(char arr[])
 }
 
 
-int main()
-{
-	char arr[] = "AnuragSharma";
-
-	countSort(arr);
-
-	cout << "Sorted character array is " << arr;
-	return 0;
-}
-
- #include<stdio.h>
- int main(){
-	
- }
